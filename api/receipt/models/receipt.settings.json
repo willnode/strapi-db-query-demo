@@ -1,0 +1,26 @@
+{
+  "kind": "collectionType",
+  "collectionName": "receipts",
+  "info": {
+    "name": "Receipt"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "sender": {
+      "plugin": "users-permissions",
+      "model": "user"
+    },
+    "recipient": {
+      "plugin": "users-permissions",
+      "model": "user"
+    },
+    "amount": {
+      "type": "integer"
+    }
+  }
+}

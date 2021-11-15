@@ -1,0 +1,60 @@
+{
+  "routes": [
+    {
+      "method": "POST",
+      "path": "/receipts/transfer_balance",
+      "handler": "receipt.transferBalance",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/receipts",
+      "handler": "receipt.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/receipts/count",
+      "handler": "receipt.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/receipts/:id",
+      "handler": "receipt.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/receipts",
+      "handler": "receipt.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/receipts/:id",
+      "handler": "receipt.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/receipts/:id",
+      "handler": "receipt.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}
