@@ -2,7 +2,7 @@
   "routes": [
     {
       "method": "POST",
-      "path": "/receipts/transfer_balance",
+      "path": "/receipts/transfer-balance",
       "handler": "receipt.transferBalance",
       "config": {
         "policies": []
